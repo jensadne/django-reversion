@@ -4,6 +4,10 @@ from south.v2 import SchemaMigration
 
 
 class Migration(SchemaMigration):
+    
+    depends_on = (
+        ('hsauth', '0001_initial'),
+    )
 
     depends_on = (
         ('hsauth', '0001_initial'),
